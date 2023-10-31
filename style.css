@@ -20,35 +20,23 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
-.container {
-  display: inline-block;
-  margin: 15px;
-}
 
 h3 {
   font-family: "Anonymous Pro", sans-serif;
   font-size: 26px;
 }
 
-h4 {
+p {
   font-family: "Anonymous Pro", sans-serif;
   font-size: 16px;
 }
 
-p {
-  font-family: "Anonymous Pro", sans-serif;
-  font-size: 14px;
-}
-
-img {
-  width: 370px;
-  border-radius: 12px;
-}
-
 body {
-  background: #F1F1F1;
+  width: 1440px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,23 +50,111 @@ body {
   min-height: 100vh;
 }
 
-
 header {
-  padding-top: 30px;
-  padding-left: -290px;
-  padding-right: 290px;
+  max-width: 1440px;
   width: 100%;
-  height: 125px;
   background: rgb(255, 255, 255, 1);
   display: flex;
+  justify-content: center;
+  height: 110px;
+  border-bottom: 1px solid #A1A6B4;
+
+}
+
+img {
+  width: 370px;
+}
+
+.content {
+  max-width: 1161px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  row-gap: 24px;
+  column-gap: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 370px;
+}
+
+.container__image {
+  max-height: 299px;
+  object-fit: contain;
+  object-position: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: white;
+}
+
+.container_info {
+  background: white;
+  max-height: 370px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.container__title {
+  color: #121723;
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin: 32px 24px 0 24px;
+  overflow-wrap: break-word;
+}
+
+.container__text {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 24px 32px 24px;
+}
+
+.ramka {
+  max-width: 1160px;
+  height: 99px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
+
 #logo {
-  width: 212px;
+  width: 250px;
   height: auto;
+}
+
+#svg {
+  width: 250px;
+  height: auto;
+  border-radius: 0%;
+}
+
+#svg1 {
+  width: 52px;
+  height: 20px;
+  border-radius: 0%;
 }
 
 ol {
@@ -89,116 +165,96 @@ ol {
   list-style-type: none;
   gap: 24px;
   padding-left: 0;
-  font-size: 28px;
-  font-family: "Anonymous Pro", sans-serif;
-  font-weight: 700;
 }
 
 .outlink {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .outlink2 {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .tab {
   display: block;
-  width: 1440px;
-}
-
-#hzkaksmestit {
+  width: 1160px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  margin-left: 280px;
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
+.back {
+  background: #F1F1F1;
   max-width: 1440px;
-  row-gap: 40px;
-  column-gap: 100px;
-}
-
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
   width: 100%;
-  max-width: 371px;
-}
-
-.container_image {
-  border-radius: 12px;
-}
-
-.container_title {
-  color: #121723;
-  font-family: "Anonymous Pro", sans-serif;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100%;
-  margin: 0;
-  overflow-wrap: break-word;
-}
-
-.container__info {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 100%;
-  gap: 10px;
-  margin: 0;
-  border-radius: 12px;
-  background: white;
-  min-height: 120px;
-  max-height: 300px;
 }
 
-.container__image {
-  max-height: 300px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 12px;
-  background: white;
+.ramka-cont {
+  background: #F1F1F1;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
 }
+
 
 footer {
+  max-width: 1440px;
   background: rgba(18, 23, 35, 1);
   width: 100%;
+  height: 142;
+  justify-content: center;
+}
+
+.footcentr {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .foot1 {
+  max-width: 1160px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
-  height: 142;
-  margin: 0;
-  border-radius: 12px;
 }
 
 #footer-logo2 {
   color: rgba(161, 166, 180, 1);
+  font-weight: 700;
 }
 
-.niz {
+.nizvramke {
+  max-width: 1440px;
+  background: rgba(18, 23, 35, 1);
   width: 100%;
   display: flex;
   align-items: start;
   justify-content: center;
+}
+
+.niz {
+  max-width: 1160px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(230, 232, 236, 0.40);
 }
